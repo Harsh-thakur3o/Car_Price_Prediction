@@ -39,13 +39,13 @@ def main():
     p7=date_time.year-years
 
      data_new = pd.DataFrame({
-    'Present_Price': p1,
-    'Kms_Driven': p2,
-    'Fuel_Type': p3,
-    'Seller_Type': p4,
-    'Transmission': p5,
-    'Owner': p6,
-    'Age': p7}, index=[0])
+        'Present_Price': p1,
+        'Kms_Driven': p2,
+        'Fuel_Type': p3,
+        'Seller_Type': p4,
+        'Transmission': p5,
+        'Owner': p6,
+        'Age': p7}, index=[0])
 
     if st.button("Predict"):
         pred=model.predict(data_new)
