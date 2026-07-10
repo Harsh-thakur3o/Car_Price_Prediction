@@ -38,7 +38,7 @@ def main():
     years=st.number_input("Car purchase year",1990,date_time.year,step=1)
     p7=date_time.year-years
 
-     data_new = pd.DataFrame({
+    data_new = pd.DataFrame({
         'Present_Price': p1,
         'Kms_Driven': p2,
         'Fuel_Type': p3,
