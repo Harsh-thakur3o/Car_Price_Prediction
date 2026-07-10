@@ -38,14 +38,14 @@ def main():
     years=st.number_input("Car purchase year",1990,date_time.year,step=1)
     p7=date_time.year-years
 
-    data_new=pd.DataFrame({
-    'Present_Price':5.59,
-    'Kms_Driven':27000,
-    'Fuel_Type':0,
-    'Seller_Type':0,
-    'Transmission':0,
-    'Owner':0,
-    'Age':12,},index=[0])
+     data_new = pd.DataFrame({
+    'Present_Price': p1,
+    'Kms_Driven': p2,
+    'Fuel_Type': p3,
+    'Seller_Type': p4,
+    'Transmission': p5,
+    'Owner': p6,
+    'Age': p7}, index=[0])
 
     if st.button("Predict"):
         pred=model.predict(data_new)
